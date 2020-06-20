@@ -25,4 +25,11 @@ public class ExampleInstrumentedTest {
         assertEquals("com.example.myapplication", appContext.getPackageName());
         Log.d("ExampleInstrumentedTest", "useAppContext: end");
     }
+
+    public void useAppContext1() {
+        // Context of the app under test.
+        Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
+        assertEquals("com.example.myapplication", appContext.getPackageName());
+        Log.d("ExampleInstrumentedTest", "useAppContext: end");
+    }
 }
